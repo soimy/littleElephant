@@ -24,3 +24,7 @@ sysinfo.txt
 /cert/
 *.meta
 
+# Maya files
+*.swatches
+.mayaSwatches/
+
