@@ -28,3 +28,5 @@ sysinfo.txt
 *.swatches
 .mayaSwatches/
 
+# Windows preview file
+Thumbs.db

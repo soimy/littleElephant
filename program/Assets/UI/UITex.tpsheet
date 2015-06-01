@@ -1,0 +1,13 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: UITex.png (1024 x 512)
+# $TexturePacker:SmartUpdate:6a4ce4579cc0d61252c72a461a73c90e:1fac7380435275baca517fa6a44d6337:02b45b7be440e7ab6f1bbb1e72b19e13$
+#
+
+btn_cap_off;238;100;233;213;0.4892703862660944;0.4694835680751174
+btn_cap_on;2;100;234;213;0.48717948717948717;0.4694835680751174
+logo;2;315;830;195;0.5;0.4769230769230769

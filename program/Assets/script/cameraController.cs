@@ -37,16 +37,16 @@ public class cameraController : MonoBehaviour {
             if(Input.GetTouch(0).phase == TouchPhase.Began&&!EventSystem.current.IsPointerOverGameObject())
             {
                 Point1 = Input.GetTouch(0).position;
-                lastRotX = transform.rotation.x;
-                lastRotY = transform.rotation.y;
 				// If camera is tweening, kill it first
 				if(DOTween.IsTweening(this.transform)){
-					DOTween.Kill(this.transform);
+					DOTween.Kill(this.transform, false);
 				}
+                lastRotX = transform.rotation.x;
+                lastRotY = transform.rotation.y;
             }
 
             // Move finger on screen
-            if (Input.GetTouch(0).phase == TouchPhase.Moved && !EventSystem.current.IsPointerOverGameObject())
+            if (Input.GetTouch(0).phase == TouchPhase.Moved) 
             {
                 Point2 = Input.GetTouch(0).position;
                 rotY = lastRotY + (Point2.x - Point1.x) * 90.0f / Screen.width * speed;
@@ -84,10 +84,12 @@ public class cameraController : MonoBehaviour {
 				lastRotX = transform.rotation.x;
 				lastRotY = transform.rotation.y;
 				dragTrigger = true;
+
 				// If camera is tweening, kill it first
 				if(DOTween.IsTweening(this.transform)){
 					DOTween.Kill(this.transform);
 				}
+				this.transform.rotation = Quaternion.Euler(lastRotX, lastRotY, 0f);
 			}
 		}
 
