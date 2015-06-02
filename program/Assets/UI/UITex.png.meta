@@ -7,6 +7,8 @@ TextureImporter:
     21300000: btn_cap_off
     21300002: btn_cap_on
     21300004: logo
+    21300006: sound_off
+    21300008: sound_on
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -29,11 +31,11 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -2
   maxTextureSize: 4096
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -81,6 +83,26 @@ TextureImporter:
         height: 195
       alignment: 9
       pivot: {x: .5, y: .476923078}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sound_off
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 337
+        width: 171
+        height: 173
+      alignment: 9
+      pivot: {x: .491228074, y: .508670509}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sound_on
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 162
+        width: 171
+        height: 173
+      alignment: 9
+      pivot: {x: .491228074, y: .508670509}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

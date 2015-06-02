@@ -31,6 +31,7 @@ public class cameraController : MonoBehaviour {
         // Touch drag to Rotate CamRoot
         RaycastHit hit = new RaycastHit();
         Ray ray;
+
         if (Input.touchCount > 0 )
         {
             // Touch began, save the position
@@ -80,16 +81,16 @@ public class cameraController : MonoBehaviour {
 		{
 			if(!dragTrigger) {
 				Point1 = Input.mousePosition;
-				//Debug.Log("Started mouse down at :" + Point1.ToString());
-				lastRotX = transform.rotation.x;
-				lastRotY = transform.rotation.y;
+				lastRotX = transform.eulerAngles.x;
+				lastRotY = transform.eulerAngles.y;
 				dragTrigger = true;
+				//Debug.Log("("+lastRotX+","+lastRotY+")");
 
 				// If camera is tweening, kill it first
 				if(DOTween.IsTweening(this.transform)){
 					DOTween.Kill(this.transform);
+					//this.transform.DOPause();
 				}
-				this.transform.rotation = Quaternion.Euler(lastRotX, lastRotY, 0f);
 			}
 		}
 
@@ -99,6 +100,7 @@ public class cameraController : MonoBehaviour {
 			//Debug.Log("Tracked mouse down at :" + Point2.ToString());
 			rotY = lastRotY + (Point2.x - Point1.x) * 90.0f / Screen.width * speed;
 			rotX = lastRotX - (Point2.y - Point1.y) * 180.0f / Screen.height * speed;
+			//rotX = rotX>50?50:(rotX<-40?-40:rotX);
 			this.transform.rotation = Quaternion.Euler(rotX, rotY, 0.0f);
 		}
 
@@ -117,7 +119,11 @@ public class cameraController : MonoBehaviour {
 						player.SendMessage("playAnimClip", 1);
 					}
 			}
-			this.transform.DORotate(new Vector3(0f, 0f, 0f), 1f, RotateMode.Fast).SetEase(Ease.OutCubic);
+			this.transform.DORotate(new Vector3(0f, 0f, 0f), 2f, RotateMode.Fast).SetEase(Ease.OutCubic);
         }
+	}
+	public void toggleSound() {
+		AudioSource audio = GetComponent<AudioSource>();
+		audio.mute = !audio.mute;
 	}
 }

@@ -49,6 +49,10 @@ ModelImporter:
     100086: joint8
     100088: joint9
     100090: wu
+    100092: group16
+    100094: group17
+    100096: group18
+    100098: group19
     400000: ad:model_ani:body
     400002: ad:model_ani:cap
     400004: ad:model_ani:pSphere1
@@ -95,6 +99,10 @@ ModelImporter:
     400086: joint8
     400088: joint9
     400090: wu
+    400092: group16
+    400094: group17
+    400096: group18
+    400098: group19
     2300000: ad:model_ani:cap
     2300002: ad:model_ani:pSphere1
     2300004: ad:model_ani:pSphere2
@@ -111,7 +119,7 @@ ModelImporter:
     11100000: //RootNode
     13700000: ad:model_ani:body
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:
@@ -392,7 +400,7 @@ ModelImporter:
   tangentSpace:
     normalSmoothAngle: 60
     splitTangentsAcrossUV: 1
-    normalImportMode: 0
+    normalImportMode: 1
     tangentImportMode: 1
   importAnimation: 1
   copyAvatar: 0
