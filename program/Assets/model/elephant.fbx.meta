@@ -1,0 +1,415 @@
+fileFormatVersion: 2
+guid: 4e11f6c603ca1894185767b879996565
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: ad:model_ani:body
+    100002: ad:model_ani:cap
+    100004: ad:model_ani:pSphere1
+    100006: ad:model_ani:pSphere2
+    100008: //RootNode
+    100010: gu
+    100012: joint1
+    100014: joint10
+    100016: joint11
+    100018: joint12
+    100020: joint13
+    100022: joint14
+    100024: joint15
+    100026: joint16
+    100028: joint17
+    100030: joint18
+    100032: joint19
+    100034: joint2
+    100036: joint20
+    100038: joint21
+    100040: joint22
+    100042: joint23
+    100044: joint24
+    100046: joint25
+    100048: joint26
+    100050: joint27
+    100052: joint28
+    100054: joint29
+    100056: joint3
+    100058: joint3 1
+    100060: joint30
+    100062: joint31
+    100064: joint32
+    100066: joint33
+    100068: joint34
+    100070: joint35
+    100072: joint36
+    100074: joint4
+    100076: joint4 1
+    100078: joint5
+    100080: joint5 1
+    100082: joint6
+    100084: joint7
+    100086: joint8
+    100088: joint9
+    100090: wu
+    400000: ad:model_ani:body
+    400002: ad:model_ani:cap
+    400004: ad:model_ani:pSphere1
+    400006: ad:model_ani:pSphere2
+    400008: //RootNode
+    400010: gu
+    400012: joint1
+    400014: joint10
+    400016: joint11
+    400018: joint12
+    400020: joint13
+    400022: joint14
+    400024: joint15
+    400026: joint16
+    400028: joint17
+    400030: joint18
+    400032: joint19
+    400034: joint2
+    400036: joint20
+    400038: joint21
+    400040: joint22
+    400042: joint23
+    400044: joint24
+    400046: joint25
+    400048: joint26
+    400050: joint27
+    400052: joint28
+    400054: joint29
+    400056: joint3
+    400058: joint3 1
+    400060: joint30
+    400062: joint31
+    400064: joint32
+    400066: joint33
+    400068: joint34
+    400070: joint35
+    400072: joint36
+    400074: joint4
+    400076: joint4 1
+    400078: joint5
+    400080: joint5 1
+    400082: joint6
+    400084: joint7
+    400086: joint8
+    400088: joint9
+    400090: wu
+    2300000: ad:model_ani:cap
+    2300002: ad:model_ani:pSphere1
+    2300004: ad:model_ani:pSphere2
+    3300000: ad:model_ani:cap
+    3300002: ad:model_ani:pSphere1
+    3300004: ad:model_ani:pSphere2
+    4300000: ad:model_ani:pSphere1
+    4300002: ad:model_ani:pSphere2
+    4300004: ad:model_ani:cap
+    4300006: ad:model_ani:body
+    7400000: lookAround
+    7400002: idle
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: ad:model_ani:body
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: lookAround
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 110
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: gu
+        weight: 1
+      - path: gu/joint1
+        weight: 1
+      - path: gu/joint1/joint13
+        weight: 1
+      - path: gu/joint1/joint13/joint2
+        weight: 1
+      - path: gu/joint1/joint13/joint2/joint3
+        weight: 1
+      - path: gu/joint1/joint13/joint2/joint3/joint4
+        weight: 1
+      - path: gu/joint1/joint13/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: gu/joint1/joint13/joint14
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint6
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint6/joint3 1
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint6/joint3 1/joint4 1
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint6/joint3 1/joint4 1/joint5
+          1
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/ad:model_ani:cap
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/ad:model_ani:pSphere1
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/ad:model_ani:pSphere2
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/joint7
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/joint7/joint8
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/joint7/joint8/joint9
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/joint7/joint8/joint9/joint10
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/joint7/joint8/joint9/joint10/joint11
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/joint7/joint8/joint9/joint10/joint11/joint12
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/joint19
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/joint19/joint20
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/joint19/joint20/joint21
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/joint34
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/joint34/joint35
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/joint34/joint35/joint36
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint30
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint30/joint31
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint30/joint31/joint32
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint30/joint31/joint32/joint33
+        weight: 1
+      - path: gu/joint1/joint13/joint22
+        weight: 1
+      - path: gu/joint1/joint13/joint22/joint23
+        weight: 1
+      - path: gu/joint1/joint13/joint22/joint23/joint24
+        weight: 1
+      - path: gu/joint1/joint13/joint22/joint23/joint24/joint25
+        weight: 1
+      - path: gu/joint1/joint13/joint26
+        weight: 1
+      - path: gu/joint1/joint13/joint26/joint27
+        weight: 1
+      - path: gu/joint1/joint13/joint26/joint27/joint28
+        weight: 1
+      - path: gu/joint1/joint13/joint26/joint27/joint28/joint29
+        weight: 1
+      - path: wu
+        weight: 1
+      - path: wu/ad:model_ani:body
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      firstFrame: 110
+      lastFrame: 210
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 20
+      loop: 1
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0
+        functionName: NewEvent
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: gu
+        weight: 1
+      - path: gu/joint1
+        weight: 1
+      - path: gu/joint1/joint13
+        weight: 1
+      - path: gu/joint1/joint13/joint2
+        weight: 1
+      - path: gu/joint1/joint13/joint2/joint3
+        weight: 1
+      - path: gu/joint1/joint13/joint2/joint3/joint4
+        weight: 1
+      - path: gu/joint1/joint13/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: gu/joint1/joint13/joint14
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint6
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint6/joint3 1
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint6/joint3 1/joint4 1
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint6/joint3 1/joint4 1/joint5
+          1
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/ad:model_ani:cap
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/ad:model_ani:pSphere1
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/ad:model_ani:pSphere2
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/joint7
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/joint7/joint8
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/joint7/joint8/joint9
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/joint7/joint8/joint9/joint10
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/joint7/joint8/joint9/joint10/joint11
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/joint7/joint8/joint9/joint10/joint11/joint12
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/joint19
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/joint19/joint20
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/joint19/joint20/joint21
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/joint34
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/joint34/joint35
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint17/joint18/joint34/joint35/joint36
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint30
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint30/joint31
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint30/joint31/joint32
+        weight: 1
+      - path: gu/joint1/joint13/joint14/joint15/joint16/joint30/joint31/joint32/joint33
+        weight: 1
+      - path: gu/joint1/joint13/joint22
+        weight: 1
+      - path: gu/joint1/joint13/joint22/joint23
+        weight: 1
+      - path: gu/joint1/joint13/joint22/joint23/joint24
+        weight: 1
+      - path: gu/joint1/joint13/joint22/joint23/joint24/joint25
+        weight: 1
+      - path: gu/joint1/joint13/joint26
+        weight: 1
+      - path: gu/joint1/joint13/joint26/joint27
+        weight: 1
+      - path: gu/joint1/joint13/joint26/joint27/joint28
+        weight: 1
+      - path: gu/joint1/joint13/joint26/joint27/joint28/joint29
+        weight: 1
+      - path: wu
+        weight: 1
+      - path: wu/ad:model_ani:body
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: joint1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

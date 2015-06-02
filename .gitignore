@@ -22,7 +22,7 @@ sysinfo.txt
 
 # Project misc files
 /cert/
-*.meta
+/**.meta*/
 
 # Maya files
 *.swatches
