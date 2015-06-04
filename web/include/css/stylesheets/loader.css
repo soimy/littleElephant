@@ -1,0 +1,213 @@
+/*  ==========================================================================
+    Loader.css
+    Last update:01/26/15
+    ========================================================================== */
+
+@-webkit-keyframes loader-animation {
+    0% { left:-102px }
+    100% { left:102px }
+}
+
+@-moz-keyframes loader-animation {
+    0% { left:-102px }
+    100% { left:102px }
+}
+
+@-ms-keyframes loader-animation {
+    0% { left:-102px }
+    100% { left:102px }
+}
+
+@-o-keyframes loader-animation {
+    0% { left:-102px }
+    100% { left:102px }
+}
+
+@keyframes loader-animation {
+    0% { left:-102px }
+    100% { left:102px }
+}
+
+
+@-webkit-keyframes text-blink {
+    0% {
+        opacity:1
+    }
+
+    20% {
+        opacity:0.5
+    }
+
+    40% {
+        opacity:0.2
+    }
+
+    60% {
+        opacity:0.7
+    }
+
+    80% {
+        opacity:0.1
+    }
+
+    90% {
+        opacity:0.4
+    }
+}
+
+@-moz-keyframes text-blink {
+    0% {
+        opacity:1
+    }
+
+    20% {
+        opacity:0.5
+    }
+
+    40% {
+        opacity:0.2
+    }
+
+    60% {
+        opacity:0.7
+    }
+
+    80% {
+        opacity:0.1
+    }
+
+    90% {
+        opacity:0.4
+    }
+}
+
+@-ms-keyframes text-blink {
+    0% {
+        opacity:1
+    }
+
+    20% {
+        opacity:0.5
+    }
+
+    40% {
+        opacity:0.2
+    }
+
+    60% {
+        opacity:0.7
+    }
+
+    80% {
+        opacity:0.1
+    }
+
+    90% {
+        opacity:0.4
+    }
+}
+
+@-o-keyframes text-blink {
+    0% {
+        opacity:1
+    }
+
+    20% {
+        opacity:0.5
+    }
+
+    40% {
+        opacity:0.2
+    }
+
+    60% {
+        opacity:0.7
+    }
+
+    80% {
+        opacity:0.1
+    }
+
+    90% {
+        opacity:0.4
+    }
+}
+
+@keyframes text-blink {
+    0% {
+        opacity:1
+    }
+
+    20% {
+        opacity:0.5
+    }
+
+    40% {
+        opacity:0.2
+    }
+
+    60% {
+        opacity:0.7
+    }
+
+    80% {
+        opacity:0.1
+    }
+
+    90% {
+        opacity:0.4
+    }
+}
+
+/* ==================== Loader ==================== */
+
+.loader {
+	position:fixed;
+	z-index:9999;
+	width:100%;
+	height:100%;
+	background:#ffffff; /* Changes the loading background color */
+}
+
+.loader h5 {
+	-webkit-animation:text-blink 1s infinite;
+       -moz-animation:text-blink 1s infinite;
+       	-ms-animation:text-blink 1s infinite;
+       	 -o-animation:text-blink 1s infinite;
+    		animation:text-blink 1s infinite;
+}
+
+.loader-content {
+	display:block;
+	position:relative;
+	top:45%;
+	-webkit-animation:fadeInDown 0.8s; 
+	   -moz-animation:fadeInDown 0.8s; 
+		-ms-animation:fadeInDown 0.8s;
+		 -o-animation:fadeInDown 0.8s;
+			animation:fadeInDown 0.8s;
+}
+
+.progress-container {
+	display:inline-block;
+	position:relative;
+	width:100px;
+	height:1px;
+	overflow:hidden;
+}
+
+.progress {
+	display:block;
+	position:absolute;
+	bottom:0;
+	left:-102px;
+	overflow:hidden;
+	width:100px;
+	height:1px;
+	background-color:#bba454; /* Changes the progress bar color bar */
+	-webkit-animation:loader-animation 1s 0s infinite;
+       -moz-animation:loader-animation 1s 0s infinite;
+       	-ms-animation:loader-animation 1s 0s infinite;
+       	 -o-animation:loader-animation 1s 0s infinite;
+    		animation:loader-animation 1s 0s infinite;
+}
