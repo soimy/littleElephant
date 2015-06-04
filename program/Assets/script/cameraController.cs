@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
-using System.Collections;
+//using System.Collections;
 using DG.Tweening;
 
 public class cameraController : MonoBehaviour {
@@ -16,7 +16,7 @@ public class cameraController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         rotX = rotY = 0.0f;
-        this.transform.rotation = Quaternion.Euler(rotX, rotY, 0.0f);
+        transform.rotation = Quaternion.Euler(rotX, rotY, 0.0f);
 	}
 
 	// Update is called once per frame
@@ -36,29 +36,30 @@ public class cameraController : MonoBehaviour {
         {
             // Touch began, save the position
             if(Input.GetTouch(0).phase == TouchPhase.Began&&!EventSystem.current.IsPointerOverGameObject())
+            //if(Input.GetTouch(0).phase == TouchPhase.Began)
             {
                 Point1 = Input.GetTouch(0).position;
 				// If camera is tweening, kill it first
-				if(DOTween.IsTweening(this.transform)){
-					DOTween.Kill(this.transform, false);
+				if(DOTween.IsTweening(transform)){
+					DOTween.Kill(transform);
 				}
                 lastRotX = transform.rotation.x;
                 lastRotY = transform.rotation.y;
             }
 
             // Move finger on screen
-            if (Input.GetTouch(0).phase == TouchPhase.Moved) 
+            if (Input.GetTouch(0).phase == TouchPhase.Moved)
             {
                 Point2 = Input.GetTouch(0).position;
                 rotY = lastRotY + (Point2.x - Point1.x) * 90.0f / Screen.width * speed;
-                rotX = lastRotX - (Point2.y - Point1.y) * 180.0f / Screen.height * speed;
-                this.transform.rotation = Quaternion.Euler(rotX, rotY, 0.0f);
+                rotX = lastRotX - (Point2.y - Point1.y) * 90.0f / Screen.height * speed;
+                transform.rotation = Quaternion.Euler(rotX, rotY, 0.0f);
             }
 
             // Release finger rotate the camera back
             if (Input.GetTouch(0).phase == TouchPhase.Ended)
             {
-                this.transform.DORotate(new Vector3(0f, 0f, 0f), 1f, RotateMode.Fast).SetEase(Ease.OutCubic);
+                transform.DORotate(new Vector3(0f, 0f, 0f), 1f, RotateMode.Fast).SetEase(Ease.OutCubic);
                 //lastRotX = lastRotY = 0f;
                 rotX = rotY = 0f;
                 if (Input.GetTouch(0).deltaPosition.magnitude < 5f)
@@ -76,8 +77,8 @@ public class cameraController : MonoBehaviour {
         }
 
         // Mouse Drag to Rotate CamRoot
-        // TODO
-		if(Input.GetMouseButtonDown(0).Equals(true) && !EventSystem.current.IsPointerOverGameObject())
+		//if(Input.GetMouseButtonDown(0).Equals(true) && !EventSystem.current.IsPointerOverGameObject())
+		if(Input.GetMouseButtonDown(0).Equals(true))
 		{
 			if(!dragTrigger) {
 				Point1 = Input.mousePosition;
@@ -87,8 +88,8 @@ public class cameraController : MonoBehaviour {
 				//Debug.Log("("+lastRotX+","+lastRotY+")");
 
 				// If camera is tweening, kill it first
-				if(DOTween.IsTweening(this.transform)){
-					DOTween.Kill(this.transform);
+				if(DOTween.IsTweening(transform)){
+					DOTween.Kill(transform);
 					//this.transform.DOPause();
 				}
 			}
@@ -99,9 +100,9 @@ public class cameraController : MonoBehaviour {
 			Point2 = Input.mousePosition;
 			//Debug.Log("Tracked mouse down at :" + Point2.ToString());
 			rotY = lastRotY + (Point2.x - Point1.x) * 90.0f / Screen.width * speed;
-			rotX = lastRotX - (Point2.y - Point1.y) * 180.0f / Screen.height * speed;
+			rotX = lastRotX - (Point2.y - Point1.y) * 45.0f / Screen.height * speed;
 			//rotX = rotX>50?50:(rotX<-40?-40:rotX);
-			this.transform.rotation = Quaternion.Euler(rotX, rotY, 0.0f);
+            transform.rotation = Quaternion.Euler(rotX, rotY, 0.0f);
 		}
 
 
@@ -119,11 +120,12 @@ public class cameraController : MonoBehaviour {
 						player.SendMessage("playAnimClip", 1);
 					}
 			}
-			this.transform.DORotate(new Vector3(0f, 0f, 0f), 2f, RotateMode.Fast).SetEase(Ease.OutCubic);
+			transform.DORotate(new Vector3(0f, 0f, 0f), 2f, RotateMode.Fast).SetEase(Ease.OutCubic);
         }
 	}
+
 	public void toggleSound() {
-		AudioSource audio = GetComponent<AudioSource>();
-		audio.mute = !audio.mute;
+		AudioSource bgm = GetComponent<AudioSource>();
+		bgm.mute = !bgm.mute;
 	}
 }

@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
 
 public class btnToggle : MonoBehaviour {
 
@@ -8,11 +7,7 @@ public class btnToggle : MonoBehaviour {
 	public Sprite spriteOff;
 
 	public void toggle(){
-		Image imgScript = this.GetComponent<Image>();
-		if(imgScript.sprite == spriteOn)
-			imgScript.sprite = spriteOff;
-		else
-			imgScript.sprite = spriteOn;
-
+		Image imgScript = GetComponent<Image>();
+        imgScript.sprite = imgScript.sprite == spriteOn ? spriteOff : spriteOn;
 	}
 }
