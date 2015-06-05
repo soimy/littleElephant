@@ -23,13 +23,14 @@
 		<link rel="stylesheet" href="include/css/stylesheets/framework.css">
 		<link rel="stylesheet" href="include/css/style.css">
 
-	    <link rel="shortcut icon" href="favicon.ico">
+	    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
 		<script type="text/javascript" src="include/js/jquery-2.1.3.min.js"></script>
 		<script type="text/javascript" src="include/js/modernizr.js"></script>
         <script type="text/javascript" src="include/js/retina.min.js"></script>
 	</head>
 <body>
+
 
 	<!-- BEGIN .full-screen -->
 	<section class="full-screen bg-dark" style="background-color:#39deaa;">
@@ -40,7 +41,7 @@
                 <h5>NanoAPP proudly present.</h5>
 				<!--<h1 class="margin-bottom">Coming Soon</h1>-->
                 <div>
-                    <a href="http://nanoapp.cn/download/littleElephant.1.1.apk">
+                    <a id="J_weixin" href="http://nanoapp.cn/download/littleElephant.1.1.apk">
                         <img src="include/images/download-apk.png" width="230" height="70" />
                     </a>
                     <img class="dim" src="include/images/download-ios.png" width="230" height="70" />
@@ -60,10 +61,49 @@
 			<!-- END .social -->
 
 		</div>
+        <div id="headline">
+            <div id="logo"><img src="include/images/nanoapp.png" /></div>
+        </div>
+        <script type="text/javascript">
+            function is_weixin() {
+                var ua = navigator.userAgent.toLowerCase();
+                return (/micromessenger/.test(ua)) ? true : false ;
+            }
+            function show_weixin() {
+                var winHeight = typeof window.innerHeight != 'undefined' ?
+                    window.innerHeight : document.documentElement.clientHeight;
+                var btn = document.getElementById('J_weixin');
+                var tip = document.getElementById('weixin-tip');
+                var close = document.getElementById('close');
+                var isWeixin = is_weixin();
+                if (isWeixin) {
+                    btn.onclick = function(e) {
+                        tip.style.height = winHeight + 'px'; //兼容IOS弹窗整屏
+                        tip.style.display = 'block';
+                        return false;
+                    }
+                    tip.onclick = function() {
+                        tip.style.display = 'none';
+                    }
+                }
+            }
+            $(window).on("load", show_weixin);
+        </script>
+        <div id="weixin-tip">
+            <!--<img src="include/images/live_weixin.png" alt="微信打开" />-->
+            <p class="bubble">
+                Due to WeChat policy <br/>
+                Direct download is banned.<br />
+                Please click <strong>more</strong> icon here<br />
+                And select <strong>Open in Browser</strong>.
+            </p>
+        </div>
+
 	</section>
 	<!-- END .full-screen -->
 
-    <!-- BEGIN JavaScript -->
+
+   <!-- BEGIN JavaScript -->
 	<script type="text/javascript" src="include/js/navigation.js"></script>
 	<script type="text/javascript" src="include/js/plugins.js"></script>
 	<script type="text/javascript" src="include/js/main.js"></script>
@@ -74,14 +114,14 @@
       _paq.push(['trackPageView']);
       _paq.push(['enableLinkTracking']);
       (function() {
-        var u="http://nanoapp.cn/piwik/";
+        var u="//nanoapp.cn/piwik/";
         _paq.push(['setTrackerUrl', u+'piwik.php']);
         _paq.push(['setSiteId', 3]);
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
     </script>
-    <noscript><p><img src="http://nanoapp.cn/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+    <noscript><p><img src="//nanoapp.cn/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
     <!-- End Piwik Code -->
 
     <!-- END JavaScript -->
