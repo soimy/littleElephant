@@ -34,3 +34,6 @@ sysinfo.txt
 
 # Windows preview file
 Thumbs.db
+
+# Mac system .file
+*.DS_Store
